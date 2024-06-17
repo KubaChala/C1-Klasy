@@ -6,14 +6,17 @@ public class Main {
         System.out.println("Poczatek programu");
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter a number: ");
-        int number = sc.nextInt();
+        int number = 12;
         System.out.println("Your number is: " + number);
 
-        sc.close();
+
         System.out.println("Koniec programu");
         System.out.println("Pocztaek klasy");
         Welcome welcome = new Welcome();
-        welcome.przywiatnie("Kuba");
+        System.out.println("What is your name ? ");
+        String imie = sc.nextLine();
+        welcome.przywiatnie(imie);
         System.out.println("Koniec klasy");
+        sc.close();
     }
 }
