@@ -16,7 +16,11 @@ public class Main {
         System.out.println("What is your name ? ");
         String imie = sc.nextLine();
         welcome.przywiatnie(imie);
-        System.out.println("Koniec klasy");
+
+
+        System.out.println("Rok urodzenia : ");
+        Integer rok = sc.nextInt();
+        System.out.println(imie + " ma "+ welcome.ilelat(rok)+" lat !!!!");
         sc.close();
     }
 }
